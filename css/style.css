@@ -109,5 +109,6 @@ body, html {
 }
 .button-text {
 	margin-bottom: -20px;
+	display:none;
 }
 /* klaudias css .log in , sign up  */
