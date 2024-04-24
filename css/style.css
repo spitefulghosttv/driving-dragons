@@ -7,7 +7,7 @@ body, html {
 	background-color: #FFFAFA;
 }
 .header {
-	background: #8A8D8C;
+	background: #686868;
 	height: 70px;
 	width: 100%;
 	position: fixed;
@@ -38,7 +38,7 @@ body, html {
 }
 
 .menu {
-	background: #4169E1;
+	background: #686868;
 	height: 50px;
 	width: 100%;
 	position: fixed;
