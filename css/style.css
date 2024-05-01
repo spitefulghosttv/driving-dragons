@@ -19,6 +19,12 @@ body, html {
 	z-index: 100;
 }
 
+.header h2 {
+	color: white;
+	font-family: ;
+	padding-right: 1.5rem;
+}
+
 .icon-button {
 	width: 50px;
 	height: 50px;
@@ -93,7 +99,7 @@ body, html {
 	height: 55px;
 	width: 55px;
 	border-radius: 20px;
-	background-image: url('../images/dragon-logo.png');
+	background-image: url('../images/D1.png');
 	background-size: cover;
 	background-position: center;
 }
@@ -112,3 +118,16 @@ body, html {
 	display:none;
 }
 /* klaudias css .log in , sign up  */
+
+/* Sirius css - Gen , Lux , Dra */
+
+#general {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 7rem 0 0 0;
+}
+
+#general a {
+	padding: 1.5rem 0;
+}
