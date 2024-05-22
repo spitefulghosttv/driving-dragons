@@ -121,17 +121,43 @@ body, html {
 
 /* Sirius css - Gen , Lux , Dra */
 
-#general {
+#product {
 	display: flex;
     flex-direction: column;
     align-items: center;
 	padding: 7rem 0 0 0;
 }
 
-#general a {
-	padding: 1.5rem 0;
+.genText {
+	position: relative;
+	text-align: center;
+	color: white;
+  }
+
+.genText p {
+	color: white;
 }
 
+/* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+  }
 
 
 /* Dylan CSS Basket / confirmation */
