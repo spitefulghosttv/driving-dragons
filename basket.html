@@ -13,6 +13,49 @@
 		<div class="header-icon"></div><!--- logo on the right image done in css -->
 	</div>
 	
+
+	
+  
+
+
+<div class="car-details-container">
+    <div class="car-details">
+        <div class="car-name" id="carName"></div>
+        <div class="car-image" id="carImage"></div>
+        <div class="car-price" id="carPrice"></div>
+    </div>
+</div>
+
+	<form action="confirmation.html" method="post">
+		<div class="form-row">
+		  <div class="name-fields">
+			<div class="half-width">
+			  <input type="text" name="firstName" placeholder="First Name" required>
+			</div>
+			<div class="half-width">
+			  <input type="text" name="lastName" placeholder="Last Name" required>
+			</div>
+		  </div>
+		  <div class="full-width">
+			<input type="email" name="email" placeholder="Email" required>
+		  </div>
+		  <div class="full-width">
+			<input type="text" name="cardNumber" placeholder="Card Number" required maxlength="16">
+		  </div>
+		  <div class="expiry-cvc">
+			<div class="half-width">
+			  <input type="text" name="expiryDate" placeholder="MM/YY" required maxlength="4">
+			</div>
+			<div class="half-width">
+			  <input type="text" name="cvc" placeholder="CVC" required maxlength="3">
+			</div>
+		  </div>
+		  <button type="submit">Pay</button>
+
+		</div>
+ 	</form>
+
+
 	
 	
 	<div class="menu">
@@ -36,3 +79,29 @@
 	
 </body>
 </html>
+
+
+
+<script>
+	// Function to parse URL parameters
+	function getParameterByName(name, url) {
+	  if (!url) url = window.location.href;
+	  name = name.replace(/[\[\]]/g, '\\$&');
+	  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+		  results = regex.exec(url);
+	  if (!results) return null;
+	  if (!results[2]) return '';
+	  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+	}
+
+	// Get car details from URL parameters
+	var carName = getParameterByName('name');
+	var carImage = getParameterByName('image');
+	var carPrice = getParameterByName('price');
+
+	// Set car details in the checkout page
+	document.getElementById('carName').innerText = carName;
+	document.getElementById('carPrice').innerText = carPrice;
+	document.getElementById('carImage').style.backgroundImage = 'url(' + carImage + ')';
+  </script>
+  
