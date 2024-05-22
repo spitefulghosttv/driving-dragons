@@ -131,3 +131,147 @@ body, html {
 #general a {
 	padding: 1.5rem 0;
 }
+
+
+
+/* Dylan CSS Basket / confirmation */
+.car-image {
+	width: calc(100% - 3px);
+	/* Take into account the padding and border of the container (10px on each side) */
+	height: 200px;
+	/* Set the height */
+	background-size: cover;
+	background-position: center;
+	background-color: #ccc;
+	/* Fallback background color */
+	border-radius: 12.5px;
+	/* Rounded corners */
+	border: 1px solid rgb(10, 8, 8);
+	/* Border */
+}
+.car-details {
+	position: relative;
+}
+.car-price {
+	position: absolute;
+	/* Position independently */
+	bottom: 10px;
+	/* Align to bottom */
+	left: 10px;
+	/* Align to left */
+}
+.car-name {
+	position: absolute;
+	/* Position independently */
+	top: 10px;
+	/* Align to bottom */
+	left: 10px;
+	/* Align to left */
+}
+.car-price {
+	bottom: 10px;
+	/* Adjust bottom spacing */
+}
+.form-row {
+	margin-top: 120px;
+	max-width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: auto;
+	/* Center horizontally */
+	margin-right: auto;
+	/* Center horizontally */
+	max-width: 400px;
+	margin-bottom: 150px;
+	@media (max-width: 768px) {
+		width:350px !important;
+	}
+}
+.name-fields {
+	width: calc(100% - 10px);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+.full-width {
+	width: calc(100% - 10px);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+.expiry-cvc {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% - 10px);
+	justify-content: space-between;
+	max-width: 400px;
+	padding: 0 10px;
+	/* Set max-width to 500px for desktop screens */
+	@media (max-width: 768px) {
+		width:340px !important;
+	}
+}
+.half-width {
+	width: calc(50% - 5px);
+}
+.expiry-cvc .half-width {
+	flex: 1;
+	width: calc(50% - 5px);
+	margin-left: 5px;
+}
+input[type="text"], input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #333;
+	background-color: #FAF9F6;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+	border-color: #007bff;
+}
+input[type="text"]:hover, input[type="email"]:hover {
+	background-color: #eaeaea;
+}
+button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #534caf;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.car-details-container {
+	max-width: 80%;
+	/* Default max-width */
+	margin: 125px auto 0;
+	/* Center horizontally and add top margin */
+	padding: 10px;
+	/* Padding for spacing */
+	border: 1px solid #ccc;
+	/* Add clean border */
+	border-radius: 25px;
+	/* Rounded corners */
+	position: relative;
+	/* Needed for positioning children */
+	/* Set max-width to 500px for desktop screens */
+	@media (min-width: 768px) {
+		max-width: 500px !important;
+	}
+}
+
+ h3{
+	padding-top:150px;
+	text-align: center;
+
+} 
+h3 p{
+display:inline;
+ }
+
+
+
+/* Dylan CSS Basket / confirmation END */
