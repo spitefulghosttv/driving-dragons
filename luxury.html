@@ -1,74 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
-        <title>Mobile Layout</title>
-        <!--- Update title per page -->
-        <link
-        href="css/style.css" rel="stylesheet">
-    <!--- Link to css -->
-    </head>
-    <body>
-        <!--- top bar and logo -->
-        <div class="header">
-            <div class="header-image"></div>
-            <!--- logo on the left image done in css -->
-            <div class="header-icon"></div>
-            <!--- logo on the right image done in css -->
-        </div>
-
-        <section id="product">
-
-            <a href="basket.html"><img src="/images/mercedesB.png" alt="Mercedes B">
-                <p class="bmwTextTop top-left">Mercedes B</p>
-                <p class="bmwTextBot bottom-left">From
-                    <strong>£78/</strong>
-                    day</p>
-            </a>
-            <a href="basket.html"><img src="/images/porshe.png" alt="Porche">
-                <p class="mercTextTop top-left">Porche</p>
-                <p class="mercTextBot bottom-left">From
-                    <strong>£89/</strong>
-                    day</p>
-            </a>
-            <a href="basket.html"><img src="/images/gWagon.png" alt="G Wagon">
-                <p class="roverTextTop top-left">G Wagon</p>
-                <p class="roverTextBot bottom-left">From
-                    <strong>£102/</strong>
-                    day</p>
-            </a>
-
-        </section>
-
-        <div
-            class="menu">
-
-            <!--- button to home image done in css -->
-            <a class="icon-link" href="/home.html">
-                <button class="icon-button">
-                    <span class="all-icon home-icon"></span>
-                </button>
-                <p class="button-text">Home</p>
-            </a>
-
-            <!--- button to basket image done in css -->
-            <a class="icon-link" href="/basket.html">
-                <button class="icon-button">
-                    <span class="all-icon Basket-icon"></span>
-                </button>
-                <p class="button-text">Basket</p>
-            </a>
-
-            <!--- button to login image done in css -->
-            <a class="icon-link" href="/login.html">
-                <button class="icon-button">
-                    <span class="all-icon profile-icon"></span>
-                </button>
-                <p class="button-text">Profile</p>
-            </a>
-        </div>
-
-
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+	<title>Mobile Layout</title><!--- Update title per page -->
+	<link href="css/style.css" rel="stylesheet"><!--- Link to css -->
+</head>
+<body>
+	<!--- top bar and logo -->
+	<div class="header">
+		<div class="header-image"></div><!--- logo on the left image done in css -->
+		<div class="header-icon"></div><!--- logo on the right image done in css -->
+	</div>
+	<section id="product">
+		<h2>General</h2>
+		<div class="genText">
+			<div class="container" onclick="selectCar('Mercedes B', '/images/mercedesB.png', '£78/day')">
+				<img alt="Mercedes B" src="/images/mercedesB.png">
+				<p class="bmwTextTop top-left">Mercedes B</p>
+				<p class="bmwTextBot bottom-left">From <strong>£78/</strong> day</p>
+			</div>
+			<div class="container" onclick="selectCar('Porche', '/images/porshe.png', '£89/day')">
+				<img alt="Porche" src="/images/porshe.png">
+				<p class="mercTextTop top-left">Porche</p>
+				<p class="mercTextBot bottom-left">From <strong>£89/</strong> day</p>
+			</div>
+			<div class="container" onclick="selectCar('G Wagon', '/images/gWagon.png', '£102/day')">
+				<img alt="G Wagon" src="/images/gWagon.png">
+				<p class="roverTextTop top-left">G Wagon</p>
+				<p class="roverTextBot bottom-left">From <strong>£102/</strong> day</p>
+			</div>
+		</div>
+	</section>
+	<div class="menu">
+		<!--- button to home image done in css -->
+		 <a class="icon-link" href="/home.html"><button class="icon-button"><span class="all-icon home-icon"></span></button>
+		<p class="button-text">Home</p></a> <!--- button to basket image done in css -->
+		 <a class="icon-link" href="/basket.html"><button class="icon-button"><span class="all-icon Basket-icon"></span></button>
+		<p class="button-text">Basket</p></a> <!--- button to login image done in css -->
+		 <a class="icon-link" href="/login.html"><button class="icon-button"><span class="all-icon profile-icon"></span></button>
+		<p class="button-text">Profile</p></a>
+	</div>
+</body>
 </html>

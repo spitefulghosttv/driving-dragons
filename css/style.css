@@ -21,8 +21,7 @@ body, html {
 
 .header h2 {
 	color: white;
-	font-family: ;
-	padding-right: 1.5rem;
+ 	padding-right: 1.5rem;
 }
 
 .icon-button {
@@ -163,41 +162,31 @@ body, html {
 /* Dylan CSS Basket / confirmation */
 .car-image {
 	width: calc(100% - 3px);
-	/* Take into account the padding and border of the container (10px on each side) */
 	height: 200px;
-	/* Set the height */
 	background-size: cover;
 	background-position: center;
 	background-color: #ccc;
-	/* Fallback background color */
 	border-radius: 12.5px;
 	/* Rounded corners */
 	border: 1px solid rgb(10, 8, 8);
 	/* Border */
-}
+ }
 .car-details {
 	position: relative;
 }
 .car-price {
 	position: absolute;
-	/* Position independently */
 	bottom: 10px;
-	/* Align to bottom */
 	left: 10px;
-	/* Align to left */
+	color:white;
 }
 .car-name {
 	position: absolute;
-	/* Position independently */
 	top: 10px;
-	/* Align to bottom */
 	left: 10px;
-	/* Align to left */
+	color:white;
 }
-.car-price {
-	bottom: 10px;
-	/* Adjust bottom spacing */
-}
+ 
 .form-row {
 	margin-top: 120px;
 	max-width: 95%;
@@ -205,9 +194,7 @@ body, html {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-left: auto;
-	/* Center horizontally */
 	margin-right: auto;
-	/* Center horizontally */
 	max-width: 400px;
 	margin-bottom: 150px;
 	@media (max-width: 768px) {
@@ -233,7 +220,6 @@ body, html {
 	justify-content: space-between;
 	max-width: 400px;
 	padding: 0 10px;
-	/* Set max-width to 500px for desktop screens */
 	@media (max-width: 768px) {
 		width:340px !important;
 	}
@@ -272,18 +258,11 @@ button[type="submit"] {
 }
 .car-details-container {
 	max-width: 80%;
-	/* Default max-width */
 	margin: 125px auto 0;
-	/* Center horizontally and add top margin */
 	padding: 10px;
-	/* Padding for spacing */
 	border: 1px solid #ccc;
-	/* Add clean border */
 	border-radius: 25px;
-	/* Rounded corners */
 	position: relative;
-	/* Needed for positioning children */
-	/* Set max-width to 500px for desktop screens */
 	@media (min-width: 768px) {
 		max-width: 500px !important;
 	}

@@ -1,89 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
-        <title>General</title>
-        <!--- Update title per page -->
-        <link
-        href="css/style.css" rel="stylesheet">
-        <!--- Link to css -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!--- top bar and logo -->
-        <div class="header">
-            <div class="header-image"></div>
-            <!--- logo on the left image done in css -->
-            <h2>General</h2>
-            <div class="header-icon"></div>
-            <!--- logo on the right image done in css -->
-        </div>
-
-        <section id="product">
-
-            <h2>General</h2>
-
-            <div class="genText">
-                <div class="container">
-                    <a href="basket.html"><img src="/images/bmw.png" alt="BMW">
-                        <p class="bmwTextTop top-left">BMW</p>
-                        <p class="bmwTextBot bottom-left">From
-                            <strong>£46/</strong>
-                            day</p>
-                    </a>
-                </div>
-                <div class="container">
-                    <a href="basket.html"><img src="/images/mercedes.png" alt="Mercedes">
-                        <p class="mercTextTop top-left">Mercedes</p>
-                        <p class="mercTextBot bottom-left">From
-                            <strong>£56/</strong>
-                            day</p>
-                    </a>
-                </div>
-                <div class="container">
-                    <a href="basket.html"><img src="/images/rangeRover.png" alt="Range Rover">
-                        <p class="roverTextTop top-left">Range Rover</p>
-                        <p class="roverTextBot bottom-left">From
-                            <strong>£64/</strong>
-                            day</p>
-                    </a>
-                </div>
-            </div>
-
-
-        </section>
-
-        <div
-            class="menu">
-
-            <!--- button to home image done in css -->
-            <a class="icon-link" href="/home.html">
-                <button class="icon-button">
-                    <span class="all-icon home-icon"></span>
-                </button>
-                <p class="button-text">Home</p>
-            </a>
-
-            <!--- button to basket image done in css -->
-            <a class="icon-link" href="/basket.html">
-                <button class="icon-button">
-                    <span class="all-icon Basket-icon"></span>
-                </button>
-                <p class="button-text">Basket</p>
-            </a>
-
-            <!--- button to login image done in css -->
-            <a class="icon-link" href="/login.html">
-                <button class="icon-button">
-                    <span class="all-icon profile-icon"></span>
-                </button>
-                <p class="button-text">Profile</p>
-            </a>
-        </div>
-
-
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+	<title>General</title><!--- Update title per page -->
+	<link href="css/style.css" rel="stylesheet"><!--- Link to css -->
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--- top bar and logo -->
+	<div class="header">
+		<div class="header-image"></div><!--- logo on the left image done in css -->
+		<h2>General</h2>
+		<div class="header-icon"></div><!--- logo on the right image done in css -->
+	</div>
+	<section id="product">
+		<h2>General</h2>
+		<div class="genText">
+			<div class="container" onclick="selectCar('BMW', '/images/bmw.png', '£46/day')">
+				<img alt="BMW" src="/images/bmw.png">
+				<p class="bmwTextTop top-left">BMW</p>
+				<p class="bmwTextBot bottom-left">From <strong>£46/</strong> day</p>
+			</div>
+			<div class="container" onclick="selectCar('Mercedes', '/images/mercedes.png', '£56/day')">
+				<img alt="Mercedes" src="/images/mercedes.png">
+				<p class="mercTextTop top-left">Mercedes</p>
+				<p class="mercTextBot bottom-left">From <strong>£56/</strong> day</p>
+			</div>
+			<div class="container" onclick="selectCar('Range Rover', '/images/rangeRover.png', '£64/day')">
+				<img alt="Range Rover" src="/images/rangeRover.png">
+				<p class="roverTextTop top-left">Range Rover</p>
+				<p class="roverTextBot bottom-left">From <strong>£64/</strong> day</p>
+			</div>
+		</div>
+	</section>
+	<div class="menu">
+		<!--- button to home image done in css -->
+		 <a class="icon-link" href="/home.html"><button class="icon-button"><span class="all-icon home-icon"></span></button>
+		<p class="button-text">Home</p></a> <!--- button to basket image done in css -->
+		 <a class="icon-link" href="/basket.html"><button class="icon-button"><span class="all-icon Basket-icon"></span></button>
+		<p class="button-text">Basket</p></a> <!--- button to login image done in css -->
+		 <a class="icon-link" href="/login.html"><button class="icon-button"><span class="all-icon profile-icon"></span></button>
+		<p class="button-text">Profile</p></a>
+	</div>
+</body>
 </html>
