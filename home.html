@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
-	<title>Mobile Layout</title> <!--- Update title per page -->
-	<link href="css/style.css" rel="stylesheet"><!--- Link to css -->
-</head>
-<body>
-    <!--- top bar and logo -->
-	<div class="header">
-		<div class="header-image"></div> <!--- logo on the left image done in css -->
-        <h2>Home</h2>
-		<div class="header-icon"></div><!--- logo on the right image done in css -->
-	</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+        <title>Mobile Layout</title>
+        <!--- Update title per page -->
+        <link
+        href="css/style.css" rel="stylesheet">
+    <!--- Link to css -->
+    </head>
+    <body>
+        <!--- top bar and logo -->
+        <div class="header">
+            <div class="header-image"></div>
+            <!--- logo on the left image done in css -->
+            <h2>Home</h2>
+            <div class="header-icon"></div>
+            <!--- logo on the right image done in css -->
+        </div>
 
-	<div>
+
+        <section>
+            <h2 class="klaudiaH2">Log In</h2>
+            <div class="logInCont">
+                <form>
+                    <br>
+
+                    <p>Email Adress</p>
+                    <input type="email" name="email" placeholder="Email"><br>
+                    <p>Password</p>
+                    <input type="text" name="text" placeholder="Password"><br>
+                    <button class="LogIn">Log In</button>
+
+                    <br><br>
+                </form>
+
+
+            </div>
+
+            <h2 class="klaudiaH2">Or</h2>
+            <p>Not got an Account?</p>
+            <button class="SignUpB">Sign up</button>
+
+        </section>
+
         <section id="home">
             <a href="general.html"><img src="/images/bmw.png" alt=""></a>
             <a href="luxury.html"><img src="/images/mercedesB.png" alt=""></a>
@@ -22,27 +51,223 @@
 
         </section>
 
-    </div>
-	
-	
-	<div class="menu">
-        
-        <!--- button to home image done in css -->
-		<a class="icon-link" href="/home.html">
-            <button class="icon-button"><span class="all-icon home-icon"></span></button><p class="button-text">Home</p>
-        </a> 
+        <section id="product">
+            <h2>General</h2>
+            <div class="genText">
+                <div class="container" onclick="selectCar('BMW', '/images/bmw.png', '£46/day')">
+                    <img alt="BMW" src="/images/bmw.png">
+                    <p class="bmwTextTop top-left">BMW</p>
+                    <p class="bmwTextBot bottom-left">From
+                        <strong>£46/</strong>
+                        day</p>
+                </div>
+                <div class="container" onclick="selectCar('Mercedes', '/images/mercedes.png', '£56/day')">
+                    <img alt="Mercedes" src="/images/mercedes.png">
+                    <p class="mercTextTop top-left">Mercedes</p>
+                    <p class="mercTextBot bottom-left">From
+                        <strong>£56/</strong>
+                        day</p>
+                </div>
+                <div class="container" onclick="selectCar('Range Rover', '/images/rangeRover.png', '£64/day')">
+                    <img alt="Range Rover" src="/images/rangeRover.png">
+                    <p class="roverTextTop top-left">Range Rover</p>
+                    <p class="roverTextBot bottom-left">From
+                        <strong>£64/</strong>
+                        day</p>
+                </div>
+            </div>
+        </section>
 
-         <!--- button to basket image done in css -->
-        <a class="icon-link" href="/basket.html">
-            <button class="icon-button"><span class="all-icon Basket-icon"></span></button><p class="button-text">Basket</p>
-       </a> 
+        <section id="product">
+            <h2>General</h2>
+            <div class="genText">
+                <div class="container" onclick="selectCar('Mercedes B', '/images/mercedesB.png', '£78/day')">
+                    <img alt="Mercedes B" src="/images/mercedesB.png">
+                    <p class="bmwTextTop top-left">Mercedes B</p>
+                    <p class="bmwTextBot bottom-left">From
+                        <strong>£78/</strong>
+                        day</p>
+                </div>
+                <div class="container" onclick="selectCar('Porche', '/images/porshe.png', '£89/day')">
+                    <img alt="Porche" src="/images/porshe.png">
+                    <p class="mercTextTop top-left">Porche</p>
+                    <p class="mercTextBot bottom-left">From
+                        <strong>£89/</strong>
+                        day</p>
+                </div>
+                <div class="container" onclick="selectCar('G Wagon', '/images/gWagon.png', '£102/day')">
+                    <img alt="G Wagon" src="/images/gWagon.png">
+                    <p class="roverTextTop top-left">G Wagon</p>
+                    <p class="roverTextBot bottom-left">From
+                        <strong>£102/</strong>
+                        day</p>
+                </div>
+            </div>
+        </section>
 
-        <!--- button to login image done in css -->
-        <a class="icon-link" href="/login.html">
-            <button class="icon-button"><span class="all-icon profile-icon"></span></button><p class="button-text">Profile</p>
-        </a>
-	</div>
-	
-	
-</body>
+        <section id="product">
+            <h2>General</h2>
+            <div class="genText">
+                <div class="container" onclick="selectCar('Drago', '/images/drago.png', '£125/day')">
+                    <img alt="Drago" src="/images/drago.png">
+                    <p class="bmwTextTop top-left">Drago</p>
+                    <p class="bmwTextBot bottom-left">From
+                        <strong>£125/</strong>
+                        day</p>
+                </div>
+                <div class="container" onclick="selectCar('Flame', '/images/flame.png', '£150/day')">
+                    <img alt="Flame" src="/images/flame.png">
+                    <p class="bmwTextTop top-left">Flame</p>
+                    <p class="bmwTextBot bottom-left">From
+                        <strong>£150/</strong>
+                        day</p>
+                </div>
+                <div class="container" onclick="selectCar('Falkor', '/images/falkor.png', '£200/day')">
+                    <img alt="Falkor" src="/images/falkor.png">
+                    <p class="bmwTextTop top-left">Falkor</p>
+                    <p class="bmwTextBot bottom-left">From
+                        <strong>£200/</strong>
+                        day</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="car-details-container">
+                <div class="car-details">
+                    <div class="car-name" id="carName"></div>
+                    <div class="car-image" id="carImage"></div>
+                    <div class="car-price" id="carPrice"></div>
+                </div>
+            </div>
+            <form action="confirmation.html" method="post">
+                <div class="form-row">
+                    <div class="name-fields">
+                        <div class="half-width">
+                            <input name="firstName" placeholder="First Name" required="" type="text">
+                        </div>
+                        <div class="half-width">
+                            <input name="lastName" placeholder="Last Name" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="full-width">
+                        <input name="email" placeholder="Email" required="" type="email">
+                    </div>
+                    <div class="full-width">
+                        <input maxlength="16" name="cardNumber" placeholder="Card Number" required="" type="text">
+                    </div>
+                    <div class="expiry-cvc">
+                        <div class="half-width">
+                            <input maxlength="4" name="expiryDate" placeholder="MM/YY" required="" type="text">
+                        </div>
+                        <div class="half-width">
+                            <input maxlength="3" name="cvc" placeholder="CVC" required="" type="text">
+                        </div>
+                    </div>
+                    <button type="submit">Pay</button>
+                </div>
+            </form>
+            <div
+                class="menu">
+                <!--- button to home image done in css -->
+                <a class="icon-link" href="/home.html">
+                    <button class="icon-button">
+                        <span class="all-icon home-icon"></span>
+                    </button>
+                    <p class="button-text">Home</p>
+                </a>
+                <!--- button to basket image done in css -->
+                <a class="icon-link" href="/basket.html">
+                    <button class="icon-button">
+                        <span class="all-icon Basket-icon"></span>
+                    </button>
+                    <p class="button-text">Basket</p>
+                </a>
+                <!--- button to login image done in css -->
+                <a class="icon-link" href="/login.html">
+                    <button class="icon-button">
+                        <span class="all-icon profile-icon"></span>
+                    </button>
+                    <p class="button-text">Profile</p>
+                </a>
+            </div>
+            <script>
+                function selectCar(name, image, price) {
+                    const url = new URL(window.location);
+                    url.searchParams.set('name', name);
+                    url.searchParams.set('image', image);
+                    url.searchParams.set('price', price);
+                    window.history.pushState({}, '', url);
+
+                    updateCarDetails();
+                }
+
+                function getParameterByName(name, url) {
+                    if (! url) 
+                        url = window.location.href;
+                    
+                    name = name.replace(/[\[\]]/g, '\\$&');
+                    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                        results = regex.exec(url);
+                    if (! results) 
+                        return null;
+                    
+                    if (! results[2]) 
+                        return '';
+                    
+                    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                }
+
+                function updateCarDetails() {
+                    const carName = getParameterByName('name');
+                    const carImage = getParameterByName('image');
+                    const carPrice = getParameterByName('price');
+
+                    if (carName && carImage && carPrice) {
+                        document.getElementById('carName').innerText = carName;
+                        document.getElementById('carPrice').innerText = carPrice;
+                        document.getElementById('carImage').style.backgroundImage = 'url(' + carImage + ')';
+                        document.getElementById('carDetailsContainer').style.display = 'block';
+                    }
+                }
+
+                // Initialize car details on page load
+                window.onload = function () {
+                    updateCarDetails();
+                };
+            </script>
+        </section>
+
+
+        <div
+            class="menu">
+
+            <!--- button to home image done in css -->
+            <a class="icon-link" href="/home.html">
+                <button class="icon-button">
+                    <span class="all-icon home-icon"></span>
+                </button>
+                <p class="button-text">Home</p>
+            </a>
+
+            <!--- button to basket image done in css -->
+            <a class="icon-link" href="/basket.html">
+                <button class="icon-button">
+                    <span class="all-icon Basket-icon"></span>
+                </button>
+                <p class="button-text">Basket</p>
+            </a>
+
+            <!--- button to login image done in css -->
+            <a class="icon-link" href="/login.html">
+                <button class="icon-button">
+                    <span class="all-icon profile-icon"></span>
+                </button>
+                <p class="button-text">Profile</p>
+            </a>
+        </div>
+
+
+    </body>
 </html>
