@@ -1,11 +1,20 @@
 /* HEADER SECTION */
 
+main {
+	display: none;
+}
+
 body, html {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
 	background-color: #FFFAFA;
 }
+
+#header {
+	display: block !important; 
+}
+
 .header {
 	background: #686868;
 	height: 70px;
@@ -65,7 +74,13 @@ body, html {
 	color: white;
 	margin-top: 0;
 }
-.icon-link {
+.home-link {
+	text-decoration: none;
+}
+.basket-link {
+	text-decoration: none;
+}
+.login-link {
 	text-decoration: none;
 }
 .icon-button {
@@ -116,11 +131,143 @@ body, html {
 	margin-bottom: -20px;
 	display:none;
 }
+
+#footer {
+	display: block !important; 
+}
 /* klaudias css .log in , sign up  */
+
+#klaudiaLogIn {
+	margin: 7rem 0 0 0;
+}
+
+.klaudiaH2{
+    text-align: center;
+}
+
+.logInCont{
+
+    background-color: rgba(217, 217, 217, 1);
+border-radius: 50px;
+padding: 3rem;
+
+
+}
+
+.kp{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#klaudiaLogIn p {
+text-align: center;
+
+}
+
+#klaudiaLogIn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.LogIn{
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgba(169, 162, 162);
+
+
+}
+
+.klaudiaBottom{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* Nelsons css */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 0 0;
+}
+
+#home a {
+    padding: 1.5rem 0;
+}
+
+
+/* /allow text in images-Nlsn/ */
+
+.home-image1{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .home-image2{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .home-image3{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+
+.top-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  /* /Dim images/ */
+
+  .picture {
+    filter: brightness(50%)
+  }
 
 /* Sirius css - Gen , Lux , Dra */
 
-#product {
+#product1 {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 7rem 0 0 0;
+}
+
+#product2 {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: 7rem 0 0 0;
+}
+
+#product3 {
 	display: flex;
     flex-direction: column;
     align-items: center;

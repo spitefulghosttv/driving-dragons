@@ -5,22 +5,27 @@
         <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
         <title>Mobile Layout</title>
         <!--- Update title per page -->
-        <link
-        href="css/style.css" rel="stylesheet">
-    <!--- Link to css -->
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--- Link to css -->
     </head>
     <body>
-        <!--- top bar and logo -->
-        <div class="header">
-            <div class="header-image"></div>
-            <!--- logo on the left image done in css -->
-            <h2>Home</h2>
-            <div class="header-icon"></div>
-            <!--- logo on the right image done in css -->
-        </div>
+
+        <section
+            id="header">
+            <!--- top bar and logo -->
+            <div class="header">
+                <div class="header-image"></div>
+                <!--- logo on the left image done in css -->
+                <h2>Home</h2>
+                <div class="header-icon"></div>
+                <!--- logo on the right image done in css -->
+            </div>
+        </section>
+
+        <section id="klaudiaLogIn">
 
 
-        <section>
             <h2 class="klaudiaH2">Log In</h2>
             <div class="logInCont">
                 <form>
@@ -30,28 +35,47 @@
                     <input type="email" name="email" placeholder="Email"><br>
                     <p>Password</p>
                     <input type="text" name="text" placeholder="Password"><br>
-                    <button class="LogIn">Log In</button>
-
+                    <div class="kp">
+                        <button class="LogIn">Log In</button>
+                    </div>
                     <br><br>
                 </form>
 
 
             </div>
 
-            <h2 class="klaudiaH2">Or</h2>
-            <p>Not got an Account?</p>
-            <button class="SignUpB">Sign up</button>
-
         </section>
+
+        <main>
+
+
 
         <section id="home">
-            <a href="general.html"><img src="/images/bmw.png" alt=""></a>
-            <a href="luxury.html"><img src="/images/mercedesB.png" alt=""></a>
-            <a href="dragons.html"><img src="/images/drago.png" alt=""></a>
+
+            <div class="home-image1">
+                <a href="general.html">
+                    <img class="picture" src="/images/bmw.png" alt="">
+                </a>
+                <p class="centered">General</p>
+            </div>
+
+            <div class="home-image2">
+                <a href="luxury.html">
+                    <img class="picture" src="/images/mercedesB.png" alt="">
+                </a>
+                <p class="centered">Luxury</p>
+            </div>
+
+            <div class="home-image3">
+                <a href="dragons.html">
+                    <img class="picture" src="/images/drago.png" alt="">
+                </a>
+                <p class="centered">Dragons</p>
+            </div>
 
         </section>
 
-        <section id="product">
+        <section id="product1">
             <h2>General</h2>
             <div class="genText">
                 <div class="container" onclick="selectCar('BMW', '/images/bmw.png', '£46/day')">
@@ -78,8 +102,8 @@
             </div>
         </section>
 
-        <section id="product">
-            <h2>General</h2>
+        <section id="product2">
+            <h2>Luxury</h2>
             <div class="genText">
                 <div class="container" onclick="selectCar('Mercedes B', '/images/mercedesB.png', '£78/day')">
                     <img alt="Mercedes B" src="/images/mercedesB.png">
@@ -105,8 +129,8 @@
             </div>
         </section>
 
-        <section id="product">
-            <h2>General</h2>
+        <section id="product3">
+            <h2>Dragons</h2>
             <div class="genText">
                 <div class="container" onclick="selectCar('Drago', '/images/drago.png', '£125/day')">
                     <img alt="Drago" src="/images/drago.png">
@@ -132,11 +156,11 @@
             </div>
         </section>
 
-        <section>
+        <section id="checkout">
 
             <div class="car-details-container">
                 <div class="car-details">
-                    <div class="car-name" id="carName"></div>
+                    <div class="car-name" id="carName"><img src="images/mercedes.png" alt=""></div>
                     <div class="car-image" id="carImage"></div>
                     <div class="car-price" id="carPrice"></div>
                 </div>
@@ -207,15 +231,21 @@
                     if (! url) 
                         url = window.location.href;
                     
+
+
                     name = name.replace(/[\[\]]/g, '\\$&');
                     const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
                         results = regex.exec(url);
                     if (! results) 
                         return null;
                     
+
+
                     if (! results[2]) 
                         return '';
                     
+
+
                     return decodeURIComponent(results[2].replace(/\+/g, ' '));
                 }
 
@@ -238,36 +268,38 @@
                 };
             </script>
         </section>
+    </main>
 
+        <section id="footer">
+            <div
+                class="menu">
 
-        <div
-            class="menu">
+                <!--- button to home image done in css -->
+                <a class="home-link" href="/home.html">
+                    <button class="icon-button">
+                        <span class="all-icon home-icon"></span>
+                    </button>
+                    <p class="button-text">Home</p>
+                </a>
 
-            <!--- button to home image done in css -->
-            <a class="icon-link" href="/home.html">
-                <button class="icon-button">
-                    <span class="all-icon home-icon"></span>
-                </button>
-                <p class="button-text">Home</p>
-            </a>
+                <!--- button to basket image done in css -->
+                <a class="basket-link" href="/basket.html">
+                    <button class="icon-button">
+                        <span class="all-icon Basket-icon"></span>
+                    </button>
+                    <p class="button-text">Basket</p>
+                </a>
 
-            <!--- button to basket image done in css -->
-            <a class="icon-link" href="/basket.html">
-                <button class="icon-button">
-                    <span class="all-icon Basket-icon"></span>
-                </button>
-                <p class="button-text">Basket</p>
-            </a>
+                <!--- button to login image done in css -->
+                <a class="login-link" href="/login.html">
+                    <button class="icon-button">
+                        <span class="all-icon profile-icon"></span>
+                    </button>
+                    <p class="button-text">Profile</p>
+                </a>
+            </div>
+        </section>
 
-            <!--- button to login image done in css -->
-            <a class="icon-link" href="/login.html">
-                <button class="icon-button">
-                    <span class="all-icon profile-icon"></span>
-                </button>
-                <p class="button-text">Profile</p>
-            </a>
-        </div>
-
-
+        <script src="script.js"></script>
     </body>
 </html>
